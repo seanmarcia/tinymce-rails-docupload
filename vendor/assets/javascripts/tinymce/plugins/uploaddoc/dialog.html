@@ -34,12 +34,7 @@
 
           if(ret.length) {
             var json = JSON.parse(ret);
-            var imgstr = "<br><img src='" + json["image"]["url"] + "'";
-
-            if(json["image"]["height"])
-              imgstr += " height='" + json["image"]["height"] + "'";
-            if(json["image"]["width"])
-              imgstr += " width='"  + json["image"]["width"]  + "'";
+            var imgstr = "<br><img src='" + json["document"]["url"] + "'";
 
             imgstr += "/>";
 
@@ -78,12 +73,6 @@
       <p>{#uploaddoc_dlg.input}: <input type="file" name='file' class="file_upload"></p>
       <label id='title_label' for='title'>Title:</label>
       <input type="text" name="title" id="title">
-      <label id='alt_text_label' for='size'>Size:</label>
-      <select name="size">
-          <option value="medium">medium</option>
-          <option value="large">large</option>
-          <option value="original">original</option>
-        </select>
       <div class="mceActionPanel">
         <input type="button" id="insert" name="insert" value="{#uploaddoc_dlg.insert}" onclick="UploadDocDialog.insert();"/>
         <input type="button" id="cancel" name="cancel" value="{#uploaddoc_dlg.cancel}" onclick="tinyMCEPopup.close();" />
