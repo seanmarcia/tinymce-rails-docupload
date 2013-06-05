@@ -1,3 +1,3 @@
 tinyMCE.addI18n('en.uploaddoc', {
-  desc: 'Insert an document from your computer'
+  desc: 'Insert a document from your computer'
 });
