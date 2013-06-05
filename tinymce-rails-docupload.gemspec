@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Tinymce::Rails::Docupload::VERSION
   s.authors     = ["Sean Marcia"]
   s.email       = ["chssweb@gmu.edu"]
-  s.homepage    = "chss.gmu.edu"
+  s.homepage    = "http://chss.gmu.edu"
   s.summary     = %q{TinyMCE plugin for taking document uploads in Rails >= 3.1}
   s.description = %q{TinyMCE plugin for taking document uploads in Rails >= 3.1}
 
