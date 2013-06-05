@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in tinymce-rails-imageupload.gemspec
+# Specify your gem's dependencies in tinymce-rails-docupload.gemspec
 gemspec
