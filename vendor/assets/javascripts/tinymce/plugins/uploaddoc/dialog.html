@@ -34,9 +34,10 @@
 
           if(ret.length) {
             var json = JSON.parse(ret);
-            var imgstr = "<br><img src='" + json["document"]["url"] + "'";
+            var imgstr = "<br><a href='" + json["document"]["url"] + "'";
 
             imgstr += "/>";
+            imgstr += json["document"]["title"] + "</a>";
 
             tinyMCE.execCommand('mceInsertContent', false, imgstr);
             tinyMCEPopup.close();
